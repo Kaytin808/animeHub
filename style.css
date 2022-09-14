@@ -1,0 +1,65 @@
+#anime-vid { 
+    display: block;
+    height: 48rem;
+    width: 79rem;
+    border: none;
+    overflow: hidden;
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(36, 35, 35);
+    color: whitesmoke;
+}
+.synopsis {
+    text-align: center;
+    line-height: 25px;
+}
+.body-container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row-reverse;
+}
+.hero-container {
+text-align: center;
+width: 24%;
+}
+.img-container {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+.episodes ul {
+    list-style: none;
+}
+.episodes {
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom: 20px;
+  }
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .active {
+background-color: #3c683e;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+  }
+  .vid-container {
+    display: flex;
+    justify-content: center;
+  }
