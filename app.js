@@ -3,6 +3,7 @@ const h2 = document.querySelector('h2')
 const hero = document.querySelector('.synopsis')
 const animeImg = document.querySelector('.anime-img')
 const buttons = document.querySelectorAll('button');
+const episodes = document.querySelector('.episodes')
 // const button1 = document.getElementById('1')
 // const button2 = document.getElementById('2')
 // const button3 = document.getElementById('3')
@@ -18,9 +19,11 @@ async function getAnime(episode) {
 async function getAnimeDetails() {
     var grabIt = await fetch("https://gogoanime.herokuapp.com/anime-details/spy-x-family")
     var parseData = await grabIt.json();
+    var title = document.querySelector('.title')
     // console.log(parseData)
     h2.textContent = parseData.animeTitle;
     hero.textContent = parseData.synopsis;
+    title.textContent = 'Synopsis'
     animeImg.src = parseData.animeImg;
 }
 getAnimeDetails();
@@ -41,3 +44,4 @@ for (var i = 0; i < btns.length; i++) {
   this.disabled = "disabled"
   });
 }
+
