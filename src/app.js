@@ -7,7 +7,7 @@ const episodes = document.querySelector('.episodes')
 
 
 
-async function getAnime(episode,name) {
+async function getAnime(episode) {
     var grabIt = await fetch(`https://gogoanime.herokuapp.com/vidcdn/watch/spy-x-family-episode-${episode}`,
     { mode: "cors" });
     var dataRet = await grabIt.json();
@@ -67,7 +67,6 @@ const searchField = document.querySelector('.search')
 
 searchBtn.addEventListener('click', () => {
   getAnimeDetails(searchField.value)
-  getAnime()
 
 })
 
