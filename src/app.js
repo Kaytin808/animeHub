@@ -7,7 +7,7 @@ const episodes = document.querySelector('.episodes')
 
 
 
-async function getAnime(episode) {
+async function getAnime(episode,name) {
     var grabIt = await fetch(`https://gogoanime.herokuapp.com/vidcdn/watch/spy-x-family-episode-${episode}`,
     { mode: "cors" });
     var dataRet = await grabIt.json();
@@ -46,17 +46,32 @@ async function getAnime(episode) {
 
 
 
-async function getAnimeDetails() {
-    var grabIt = await fetch("https://gogoanime.herokuapp.com/anime-details/spy-x-family")
+async function getAnimeDetails(name) {
+    var grabIt = await fetch(`https://gogoanime.herokuapp.com/search?keyw=${name}`)
+    var grabSynopsis = await fetch(`https://gogoanime.herokuapp.com/anime-details/${name}`)
+    var synopsisParse = await grabSynopsis.json()
     var parseData = await grabIt.json();
     var title = document.querySelector('.title')
-    // console.log(parseData)
-    h2.textContent = parseData.animeTitle;
-    hero.textContent = parseData.synopsis;
+    console.log(parseData)
+    console.log(synopsisParse)
+    h2.textContent = parseData[0]["animeTitle"];
+    hero.textContent = synopsisParse.synopsis;
     title.textContent = 'Synopsis'
-    animeImg.src = parseData.animeImg;
+    animeImg.src = parseData[0]["animeImg"];
 }
-getAnimeDetails();
+getAnimeDetails("spy-x-family");
+
+const searchBtn = document.getElementById('search')
+const searchField = document.querySelector('.search')
+
+
+searchBtn.addEventListener('click', () => {
+  getAnimeDetails(searchField.value)
+  getAnime()
+
+})
+
+
 
 function openiframe(number) {
     this.number = getAnime(number);
