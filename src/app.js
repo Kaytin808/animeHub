@@ -4,9 +4,10 @@ const hero = document.querySelector('.synopsis')
 const animeImg = document.querySelector('.anime-img')
 const buttons = document.querySelectorAll('button');
 const episodes = document.querySelector('.episodes')
-// const button1 = document.getElementById('1')
-// const button2 = document.getElementById('2')
-// const button3 = document.getElementById('3')
+
+export default function loadSpy() {
+
+
 async function getAnime(episode) {
     var grabIt = await fetch(`https://gogoanime.herokuapp.com/vidcdn/watch/spy-x-family-episode-${episode}`,
     { mode: "cors" });
@@ -15,6 +16,7 @@ async function getAnime(episode) {
     var vid = dataRet.Referer
     animeVid.src = vid;
 }
+
 
 async function getAnimeDetails() {
     var grabIt = await fetch("https://gogoanime.herokuapp.com/anime-details/spy-x-family")
@@ -42,6 +44,6 @@ for (var i = 0; i < btns.length; i++) {
   }
   this.className += " active";
   this.disabled = "disabled"
-  });
+    });
+  }
 }
-

@@ -1,0 +1,36 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(36, 35, 35);
+    color: whitesmoke;
+}
+.title {
+    font-size: 30px;
+    padding: 5px 0px 0px 15px;
+    width: fit-content;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: right;
+    margin-right: 30px;
+    gap: 30px;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    color: white;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  a:active {
+    text-decoration: none;
+  }
