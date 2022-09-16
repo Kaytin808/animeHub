@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
     <title>myAnime</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
         </div>
     </div>
     <div class="episodes">
-        <button onclick="openiframe(1)" class="button" type="button" id="1">1</button>
+        <button onclick="getAnime(1)" class="button" type="button" id="1">1</button>
         <button onclick="openiframe(2)" class="button" type="button" id="2">2</button>
         <button onclick="openiframe(3)" class="button" type="button" id="3">3</button>
         <button onclick="openiframe(4)" class="button" type="button" id="4">4</button>
@@ -33,12 +34,18 @@
         <button onclick="openiframe(11)" class="button" type="button" id="11">11</button>
         <button onclick="openiframe(12)" class="button" type="button" id="12">12</button>
     </div>
+
     <div class="vid-container">
-    <iframe id="anime-vid" allowfullscreen = 'true' scrolling="no" width="500px" height="300px">
-    </iframe> 
-    <button id="test" type="button"></button>
+        <video controls crossorigin playsinline>
+        </video>
     </div>
+
+   
     <script src="main.js"></script>
+    <script src="/src/app.js"></script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <!-- HLS Support for streaming-->
+    <script src="https://cdn.rawgit.com/video-dev/hls.js/18bb552/dist/hls.min.js"></script>
 </body>
 
 </html>
