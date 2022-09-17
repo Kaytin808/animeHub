@@ -1,63 +1,110 @@
-html {
-    font-family: 'Open Sans', sans-serif;
-    background-color: rgb(36, 35, 35);
-    color: whitesmoke;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap');
+:root{
+  --blue:#4bb6c4;
+  --black:#000000;
+  --light-color:#181818;
+  --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1)
+}
+*{
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+#aot {
+  background-image: url(/src/imgs/Aot.png);
+}
+#spy {
+  background-image: url(/src/imgs/spy.jpg);
+}
+#hero-ac {
+  background-image: url(/src/imgs/hero-academia.png);
+}
+#op {
+  background-image: url(/src/imgs/op.png);
+}
+.home {
+  padding: 0;
+}
+.home .box{
+  min-height: 100vh;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display: flex;
+  align-items: center;
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content:flex-end;
+  padding:2rem 9%;
+}
+.home .box {
+  justify-content: flex-start;
+}
+.home .box.second{
+  justify-content: flex-end;
+}
+.home .box .content{
+  width:50rem;
+}
+.home .box .content h3{
+  font-size: 6rem;
+  color: #fff;
+  padding-top: .5rem;
+  text-transform: uppercase;
+}
+.home .box .content p{
+  line-height: 2;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top:5.5rem;
+}
+section{
+  padding: 2rem 9%;
+}
+
+section:nth-child(even){
+  background:var(--light-color);
 }
 html body {
     height: 100%;
 }
-.title {
-    font-size: 30px;
-    padding: 5px 0px 0px 15px;
-    width: fit-content;
-  }
-  ul {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: right;
-    margin-right: 30px;
-    gap: 30px;
-  }
-  nav {
-    display: flex;
-  }
-  li {
-    list-style: none;
-  }
-  .hero-container {
-    width: 120em;
-    height: 37em;
-    display: flex;
-    gap: 25px;
-    align-items: center;
-  }
-  /* .anime-cards {
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  background-color: #181818;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
 
-  } */
-  .cards {
-    text-align: center;
-    height: 24em;
-    width: 15em;
-    background-color: #4d4d4d;
-    border-radius: 15px;
-  }
-  
-  .anime-cards h1 {
-    text-align: center;
-  }
-  a {
-    color: white;
-  }
-  a:link {
-    text-decoration: none;
-  }
-  a:visited {
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-  a:active {
-    text-decoration: none;
-  }
+}
+header .logo {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+header .logo i {
+  color: red;
+}
+header .navbar a{
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  padding: .5rem 1.5rem;
+  color: #fff;
+}
+header .navbar a:hover {
+  background: red;
+}
