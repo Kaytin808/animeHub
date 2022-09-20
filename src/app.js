@@ -105,10 +105,26 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
   }
   this.className += " active";
-  
+
+
   // if (current.className === " active") {
   //   current.disabled = "disabled"
   // } 
   
     });
   }
+// function checkStorage() {
+//   if (localStorage.getItem("listId") != null) {
+//     var val = localStorage.getItem("listId")
+//     console.log(val)
+//     setActive(val)
+//   }
+// }
+// function active(id) {
+//   localStorage.removeItem('listId');//clear previous data
+//   localStorage.setItem("listId", id);//add data to storage
+//   console.log(id);
+//         }
+//         function setActive(value) {
+//           document.getElementById(value).classList.value = " active";
+//               }
