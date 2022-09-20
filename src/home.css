@@ -89,7 +89,13 @@ header{
   align-items: center;
   justify-content: space-between;
   z-index: 10000;
-
+}
+.btn {
+  font-size: 20px;
+color: white;
+background: red;
+border-radius: .5rem;
+padding: 0.5rem 2.5rem 6px;
 }
 header .logo {
   color: #fff;

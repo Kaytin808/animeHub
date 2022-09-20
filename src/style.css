@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap');
 #anime-vid { 
     display: block;
     height: 48rem;
@@ -5,20 +6,59 @@
     border: none;
     overflow: hidden;
 }
+*{
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
 html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: rgb(36, 35, 35);
     color: whitesmoke;
+    font-size: 62.5%;
+}
+header{
+  background-color: #1f1f1f;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+}
+header .logo {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+header .logo i {
+  color: red;
+}
+header .navbar a{
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  padding: .5rem 1.5rem;
+  color: #fff;
+}
+header .navbar a:hover {
+  background: red;
 }
 .synopsis {
     text-align: center;
     line-height: 25px;
+    line-height: 2.5rem;
+font-size: 1.6rem;
 }
 .body-container {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: row-reverse;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-top: 39px;
 }
 .hero-container {
 text-align: center;
@@ -28,6 +68,7 @@ width: 24%;
     text-align: center;
     font-size: 20px;
     font-style: italic;
+    margin-right: 30px;
 }
 .episodes ul {
     list-style: none;
@@ -47,6 +88,7 @@ width: 24%;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    margin-right: 11px;
   }
   .active {
 background-color: #3c683e;
@@ -62,10 +104,11 @@ opacity: 0.65;
   }
   .vid-container {
     margin: 20px auto;
-    width: 80rem;
-    height: 50rem;
+    width: 115rem;
+    height: fit-content
   }
   video {
     width: 100%;
     background: #464646;
+    height: 60rem;
   }
