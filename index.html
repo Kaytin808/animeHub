@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/src/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <title>myAnime</title>
 </head>
 <body>
     <header>
-        <a href="/dist/homePage.html" class="logo"><i class="fas fa-heart"></i>myAnime</a>
+        <a href="#" class="logo"><i class="fas fa-heart"></i>myAnime</a>
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#anime">anime</a>
@@ -20,54 +22,70 @@
             <a href="#family">family</a>
         </nav>
     </header>
-    <div class="body-container">
-        <div class="hero-container">
-        <h1 class="title">synopsis</h1>
-    <hero class="synopsis">For the agent known as "Twilight," no order is too tall if it is for the sake of peace. Operating as Westalis' master spy, 
-        Twilight works tirelessly to prevent extremists from sparking a war with neighboring country Ostania. For his latest mission, he must investigate 
-        Ostanian politician Donovan Desmond by infiltrating his son's school: the prestigious Eden Academy. Thus, the agent faces the most difficult task 
-        of his career: get married, have a child, and play family. Twilight, or "Loid Forger," quickly 
-        adopts the unassuming orphan Anya to play the role of a six-year-old daughter and prospective Eden Academy student. F
-        or a wife, he comes across Yor Briar, an absent-minded office worker who needs a pretend partner of her own to impress her friends. H
-        owever, Loid is not the only one with a hidden nature. Yor moonlights as the lethal assassin "Thorn Princess." For her, marrying Loid creates the 
-        perfect cover. Meanwhile, Anya is not the ordinary girl she appears to be; she is an esper, the product of secret experiments that allow her to 
-        read minds. Although she uncovers their true identities, Anya is thrilled that her new parents are cool secret agents! She would never tell them, 
-        of course. That would ruin the fun. Under the guise of "The Forgers," the spy, the assassin, and the esper must act as a family while carrying out 
-        their own agendas. Although these liars and misfits are only playing parts, they soon find that family is about far more than blood relations.</hero>
+
+    <!--Section start-->
+<section class="home" id="home">
+    <!-- Slider main container -->
+<div class="swiper home-slider">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="box second" id="hero-ac" style="background-image: url(/src/imgs/hero-academia.jpg) no-repeat;">
+        <div class="content">
+            <h3>My Hero Academia</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. ror iusto quia cumque eum<br> 
+                consectetur quos consequuntur sequi maxime et perferendis adipisci praesentium quo?<br> 
+                Quasi, minima?</p>
+                <a href="#" class="btn">Watch</a>
         </div>
-    <div class="img-container">
-        <h2>Spy X Family</h2>
-    <img class="anime-img" src="/src/imgs/coverart/Aot.png">
+     </div>
+</div>
+      <div class="swiper-slide">        <div class="box second" id="aot" style="background-image: url(/src/imgs/Aot.jpg) no-repeat;">
+        <div class="content">
+            <h3>Attack On Titan</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. ror iusto quia cumque eum<br> 
+                consectetur quos consequuntur sequi maxime et perferendis adipisci praesentium quo?<br> 
+                Quasi, minima?</p>
+                <a href="#" class="btn">Watch</a>
+        </div>
+     </div>
+</div>
+<div class="swiper-slide">
+    <div class="box" id="spy">
+    <div class="content">
+        <h3>Spy - X - Family</h3>
+        <p>A spy on an undercover mission gets married and adopts a child as part of his cover. His wife and daughter have secrets of their own,<br> 
+            and all three must strive to keep together. A spy on an undercover mission gets married and adopts a child as part of his cover.</p>
+            <a href="/dist/index.html" class="btn">Watch</a>
         </div>
     </div>
-    <div class="episodes">
-        <button onclick="getAnime(1)" class="button" type="button" id="1">1</button>
-        <button onclick="getAnime(2)" class="button" type="button" id="2">2</button>
-        <button onclick="getAnime(3)" class="button" type="button" id="3">3</button>
-        <button onclick="getAnime(4)" class="button" type="button" id="4">4</button>
-        <button onclick="getAnime(5)" class="button" type="button" id="5">5</button>
-        <button onclick="getAnime(6)" class="button" type="button" id="6">6</button>
-        <button onclick="getAnime(7)" class="button" type="button" id="7">7</button>
-        <button onclick="getAnime(8)" class="button" type="button" id="8">8</button>
-        <button onclick="getAnime(9)" class="button" type="button" id="9">9</button>
-        <button onclick="getAnime(10)" class="button" type="button" id="10">10</button>
-        <button onclick="getAnime(11)" class="button" type="button" id="11">11</button>
-        <button onclick="getAnime(12)" class="button" type="button" id="12">12</button>
+</div>
+
+<div class="swiper-slide">
+    <div class="box" id="op" style="background-image: url(/src/imgs/onepiece.jpg) no-repeat;">
+        <div class="content">
+            <h3>One Piece</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. ror iusto quia cumque eum<br> 
+                consectetur quos consequuntur sequi maxime et perferendis adipisci praesentium quo?<br> 
+                Quasi, minima?</p>
+                <a href="#" class="btn">Watch</a>
+            </div>
+        </div>
     </div>
+  </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+</div>
+</section>
 
-    <div class="vid-container">
-        <video controls crossorigin playsinline>
-        </video>
-    </div>
-<!-- <input class="search" type="text"><button id="search" type="button">Search</button> -->
+  
 
 
 
-    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
-    <!-- HLS Support for streaming-->
-    <script src="https://cdn.rawgit.com/video-dev/hls.js/18bb552/dist/hls.min.js"></script>
-           <script src="/src/app.js"></script>
-               <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="/src/swiper.js"></script>
 </body>
-
 </html>
