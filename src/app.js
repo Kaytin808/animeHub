@@ -76,7 +76,7 @@ async function getAnimeDetails(name) {
     var parseData = await grabIt.json();
     var title = document.querySelector('.title')
     var totalEpisodes = synopsisParse.totalEpisodes;
-
+  console.log(synopsisParse)
 
 
     h2.textContent = parseData[0]["animeTitle"];
