@@ -37,7 +37,7 @@ header .logo {
   font-weight: bolder;
 }
 header .logo i {
-  color: red;
+  color: #00abff;
 }
 header .navbar a{
   font-size: 1.7rem;
@@ -46,7 +46,7 @@ header .navbar a{
   color: #fff;
 }
 header .navbar a:hover {
-  background: red;
+  background: #00abff;;
 }
 .synopsis {
     text-align: center;

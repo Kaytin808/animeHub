@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap');
 :root{
-  --blue:#4bb6c4;
+  --blue:##00abff;;
   --black:#000000;
   --light-color:#181818;
   --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1)
@@ -93,7 +93,7 @@ header{
 .btn {
   font-size: 20px;
 color: white;
-background: red;
+background: #00abff;;
 border-radius: .5rem;
 padding: 0.5rem 2.5rem 6px;
 }
@@ -103,7 +103,7 @@ header .logo {
   font-weight: bolder;
 }
 header .logo i {
-  color: red;
+  color: #00abff;
 }
 header .navbar a{
   font-size: 1.7rem;

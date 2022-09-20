@@ -41,7 +41,7 @@ async function getAnime(episode) {
       
       // For more options see: https://github.com/sampotts/plyr/#options
       // captions.update is required for captions to work with hls.js
-      const player = new Plyr(video, {captions: {active: true, update: true, language: 'en'}});
+      const player = new Plyr(video, {captions: {active: true, update: true, language: 'en'},autoplay: true,});
       
       player.quality = '1080'
       if (!Hls.isSupported()) {
@@ -62,6 +62,7 @@ async function getAnime(episode) {
     
           // Expose player so it can be used from the console
       window.player = player;
+      player.play();
     }
 
 
