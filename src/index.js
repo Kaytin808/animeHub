@@ -1,6 +1,11 @@
-// import loadSpy from "./app";
-// // const test = document.getElementById('test')
-// // test.addEventListener('click', () => {
-// //     window.open('/dist/homePage.html', '_self')
-// // })
-// loadSpy();
+// import { createDiv, bodyContainer } from "./spyLoad";
+
+
+// const btnSpy = document.getElementById('btn-spy')
+// const section = document.querySelector('.home')
+
+// btnSpy.addEventListener('click', () => {
+// section.style.display = 'none';
+// })
+
+// bodyContainer();
