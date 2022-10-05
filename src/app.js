@@ -71,7 +71,7 @@ async function getAnime(episode,name) {
 
 
 async function getAnimeDetails(name) {
-    var grabIt = await fetch(`https://gogoanime.herokuapp.com/search?keyw=${name}`)
+    var grabIt = await fetch("https://gogoanime.herokuapp.com/anime-details/boku-no-hero-academia")
     // var grabSynopsis = await fetch(`https://gogoanime.herokuapp.com/anime-details/${name}`)
     // var synopsisParse = await grabSynopsis.json()
     var parseData = await grabIt.json();

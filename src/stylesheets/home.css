@@ -93,7 +93,7 @@ header{
 .btn {
   font-size: 20px;
 color: white;
-background: #00abff;;
+background: #00abff;
 border-radius: .5rem;
 padding: 0.5rem 2.5rem 6px;
 }
@@ -112,5 +112,5 @@ header .navbar a{
   color: #fff;
 }
 header .navbar a:hover {
-  background: red;
+  background: #00abff;
 }

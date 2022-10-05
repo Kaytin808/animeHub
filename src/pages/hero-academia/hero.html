@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Hero Academia</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="/src/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+  </head>
+  <body><header>
+    <a href="/src/pages/home.html" class="logo"><i class="fas fa-heart"></i>myAnime</a>
+    <nav class="navbar">
+        <a href="/dist/index.html">Home</a>
+        <a href="#anime">anime</a>
+        <a href="#action">action</a>
+        <a href="#family">family</a>
+    </nav>
+</header>
+<div class="body-container">
+    <div class="hero-container">
+    <h1 class="title">synopsis</h1>
+<hero class="synopsis">Midoriya Izuku was just a regular middle school student in a world where people with superpowers known as Quirks are the norm. 
+    However, he dreams of one day becoming a Hero, despite being bullied by his classmates for not having a Quirk. 
+    After being the only one to try and save his childhood friend, Katsuki, from a Villain, All Might, the world's greatest Hero, bestows upon him his own quirk, One For All. 
+    The story follows Izuku's entrance into Yuuei High School, a school that cultivates the next generation of Heroes.</hero>
+    </div>
+<div class="img-container">
+    <h2>My Hero Academia</h2>
+<img class="anime-img" src="https://gogocdn.net/cover/boku-no-hero-academia.jpg">
+    </div>
+</div>
+<div class="episodes">
+    <button onclick="getAnime(1,'boku-no-hero-academia')" class="button" type="button" id="1">1</button>
+    <button onclick="getAnime(2,'boku-no-hero-academia')" class="button" type="button" id="2">2</button>
+    <button onclick="getAnime(3,'boku-no-hero-academia')" class="button" type="button" id="3">3</button>
+    <button onclick="getAnime(4,'boku-no-hero-academia')" class="button" type="button" id="4">4</button>
+    <button onclick="getAnime(5,'boku-no-hero-academia')" class="button" type="button" id="5">5</button>
+    <button onclick="getAnime(6,'boku-no-hero-academia')" class="button" type="button" id="6">6</button>
+    <button onclick="getAnime(7,'boku-no-hero-academia')" class="button" type="button" id="7">7</button>
+    <button onclick="getAnime(8,'boku-no-hero-academia')" class="button" type="button" id="8">8</button>
+    <button onclick="getAnime(9,'boku-no-hero-academia')" class="button" type="button" id="9">9</button>
+    <button onclick="getAnime(10,'boku-no-hero-academia')" class="button" type="button" id="10">10</button>
+    <button onclick="getAnime(11,'boku-no-hero-academia')" class="button" type="button" id="11">11</button>
+    <button onclick="getAnime(12,'boku-no-hero-academia')" class="button" type="button" id="12">12</button>
+    <button onclick="getAnime(13,'boku-no-hero-academia')" class="button" type="button" id="12">13</button>
+</div>
+
+<div class="vid-container">
+    <video controls crossorigin playsinline>
+    </video>
+</div>
+<!-- <input class="search" type="text"><button id="search" type="button">Search</button> -->
+
+
+
+<script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+<!-- HLS Support for streaming-->
+<script src="https://cdn.rawgit.com/video-dev/hls.js/18bb552/dist/hls.min.js"></script>
+       <script src="/src/app.js"></script></body>
+</html>
